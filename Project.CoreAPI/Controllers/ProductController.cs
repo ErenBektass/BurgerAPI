@@ -21,7 +21,7 @@ namespace Project.CoreAPI.Controllers
         [HttpGet(Name = "ListProduct")]
         public IEnumerable<ProductModel> ListProduct()
         {
-            return _db.Products.Select(x => new ProductModel
+            return _db.Products.Select(x => new ProductModel 
             {
                 Name = x.ProductName,
                 UnitPrice = x.UnitPrice,
