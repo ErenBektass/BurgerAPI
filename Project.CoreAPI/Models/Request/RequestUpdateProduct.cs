@@ -1,12 +1,10 @@
 ﻿namespace Project.CoreAPI.Models.Request
 {
-    public class RequestAddProduct
+    public class RequestUpdateProduct
     {
+        public int ProductID { get; set; }
         public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
-
-        public int? CategoryID { get; set; }
-
-        public short UnitInStock { get; set; }
+        public int UnitInStock { get; set; }
     }
 }
