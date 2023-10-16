@@ -14,7 +14,7 @@ namespace Project.MAP.Configurations
         {
             base.Configure(builder);
             builder.HasOne(x => x.Profile).WithOne(x => x.AppUser).HasForeignKey<AppUserProfile>(x => x.ID);
-            builder.Ignore(x => x.ID);
+            builder.Ignore(x => x.ID); 
         }
     }
 }
